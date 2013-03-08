@@ -1,0 +1,20 @@
+www:
+    type: perl-worker
+    approot: collector
+    config:
+       perl_version: v5.16.x
+    requirements:
+        - Modern::Perl
+        - FindBin
+        - utf8::all
+        - IO::All
+        - JSON
+        - Mojolicious
+        - Net::Twitter::Stream
+        - Net::Twitter
+        - Mango
+        - Data::Dumper
+        - IO::Socket::SSL
+        - Net::SSLeay
+db:
+    type: mongodb
